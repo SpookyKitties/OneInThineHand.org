@@ -4,18 +4,22 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "web": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "jszip": "^3.2.0",
+    "pouchdb-browser": "^7.0.0",
     "register-service-worker": "^1.5.2",
     "vue": "^2.6.6",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "worker-pouch": "^2.1.0"
   },
   "devDependencies": {
     "@types/jest": "^23.1.4",
@@ -31,6 +35,9 @@
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
+    "electron": "^4.0.5",
+    "electron-builder": "^20.38.5",
+    "electron-reload": "^1.4.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
